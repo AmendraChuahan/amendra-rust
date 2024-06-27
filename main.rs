@@ -1,52 +1,19 @@
+//  expressions
 fn main() {
-    println!("loops!");
-    //first();
-   // second();
-   //third();
-    fourth();
+    println!("Hello, world!");
+    ex();
+    //calling
+    let xy = return_value();
+    println!(" the x ,y - {}", xy);
 }
-// types of loops
-//for, while, loop
-// fn first(){
-//     let mut x = 0;
-
-//     loop {
-//      x += 1;
-//      println!("x = {}",x);
-//      if x == 5{
-//      println!("we did it");
-//      break;
-//     }
-
-// }
-// }
-// fn second(){
-//     let mut number= 0;
-    
-//     while number!=0{
-//         println!("{}",number);
-//           number ==  1;
-//     }
-//     println!(" hello");
-// }
-// fn third(){
-//     let a = [10,20,30,40,50,55];
-//     let mut index=0;
-//     while index<6{// while loop
-//         println!(" the value is {}",a[index]);
-//         index +=1;
-
-//     }
-//     println!(" hello");
-// }
-// for loops
-fn fourth(){
-    for x in 1..11{
-        if x==5 {
-            continue;
-
-        }
-        println!(" the value  {}",  x);
-    }
-   
+fn ex() {
+    let y = {
+        let x = 9;
+        x + 1
+    };
+    println!(" value of y is {}",y);
 }
+// return value from function
+ fn return_value () ->i32 {
+    75 + 32
+ }
